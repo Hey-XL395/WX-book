@@ -1,0 +1,22 @@
+<!--logs.wxml-->
+<view>
+  <van-tabs active="{{ active }}" bind:change="onChange">
+    <van-tab title="分类">
+      <view class="title_">男生</view>
+      <book book='{{book.male}}' type="male"></book>
+      <view class="title_">女生</view>
+      <book book='{{book.female}}' type="female"></book>
+      <view class="title_">出版</view>
+      <book book='{{book.press}}' type="press"></book>
+    </van-tab>
+    <van-tab title="排行">
+      <view class="title_">男生
+        <ranking ranking="{{ranking.male}}"></ranking>
+      </view>
+      <view class="title_">女生
+       <ranking ranking="{{ranking.female}}"></ranking>
+       </view>
+    
+    </van-tab>
+  </van-tabs>
+</view>

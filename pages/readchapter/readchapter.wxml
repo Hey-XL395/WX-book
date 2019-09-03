@@ -1,0 +1,2 @@
+<!--pages/readchapter/readchapter.wxml-->
+<view wx:for="{{read}}" wx:key="index" class="title" bindtap="toread" data-item="{{item}}">{{item.title}}</view>

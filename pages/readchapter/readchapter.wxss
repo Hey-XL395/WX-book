@@ -1,0 +1,4 @@
+/* pages/readchapter/readchapter.wxss */
+.title {
+  line-height: 60rpx
+}

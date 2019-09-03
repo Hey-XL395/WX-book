@@ -1,0 +1,9 @@
+<!--pages/read/read.wxml-->
+<view class="title1">
+{{readtitle.title}}
+</view>
+<view class="article">{{article}}</view>
+<view class="btn">
+<view class="up" bindtap="up">上一章</view>      
+<view class="down" bindtap="down">下一章</view>      
+</view>

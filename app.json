@@ -1,0 +1,47 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/search/search",
+    "pages/minclassification/minclassification",
+    "pages/Rankingdetails/Rankingdetails",
+    "pages/details/details",
+    "pages/read/read",
+    "pages/help/help",
+    "pages/readchapter/readchapter"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#FFA500",
+    "navigationBarTitleText": "书城",
+    "navigationBarTextStyle": "black"
+  },
+  "sitemapLocation": "sitemap.json",
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "iconPath": "icons/书.png",
+        "selectedIconPath": "icons/书1.png",
+        "text": "书架"
+      },
+      {
+        "pagePath": "pages/logs/logs",
+        "iconPath": "icons/首页.png",
+        "selectedIconPath": "icons/主页1.png",
+        "text": "书城"
+      },
+      {
+        "pagePath": "pages/search/search",
+        "iconPath": "icons/搜索.png",
+        "selectedIconPath": "icons/搜索1.png",
+        "text": "搜索"
+      }
+    ]
+  },
+  "permission": {
+    "scope.userLocation": {
+      "desc": "你的位置信息将用于小程序位置接口的效果展示"
+    }
+  }
+}

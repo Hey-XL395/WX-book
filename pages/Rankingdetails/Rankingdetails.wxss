@@ -1,0 +1,33 @@
+/* pages/Rankingdetails/Rankingdetails.wxss */
+.page{
+  display: flex;
+  margin: 20rpx;
+  border-bottom: 1rpx silver solid
+}
+image{
+  width: 250rpx;
+  height: 350rpx;
+  margin: 20rpx
+}
+view {
+  font-size: 35rpx;
+  color: silver
+}
+.title {
+  font-size: 40rpx;
+  margin: 20rpx;
+  color: black
+}
+.author{
+  margin: 20rpx;
+
+}
+.shortIntro{
+    margin: 20rpx;
+    /* 只显示三行 */
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+}

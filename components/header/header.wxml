@@ -1,0 +1,3 @@
+<!-- <view>header{{name}}
+<button bindtap="send">子传父</button>
+</view> -->

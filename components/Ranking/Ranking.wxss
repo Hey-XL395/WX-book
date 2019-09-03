@@ -1,0 +1,15 @@
+/* components/Ranking/Ranking.wxss */
+.rankingdis{
+  display: flex;
+  border-bottom: 2rpx rgba(88, 75, 105, 0.452) solid
+}
+.imgsize{
+  width: 70rpx;
+  align-items: center;
+  height: 70rpx;
+  margin: 12rpx
+}
+.hottext{
+  line-height: 100rpx;
+  margin-left: 5%
+}

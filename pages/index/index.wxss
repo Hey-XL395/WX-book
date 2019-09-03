@@ -1,0 +1,59 @@
+/**index.wxss**/
+
+.group {
+  display: flex;
+  justify-content: space-between;
+  padding: 40rpx;
+}
+
+.none {
+  font-size: 40rpx;
+  width: 100%;
+  margin-top: 50rpx;
+  text-align: center;
+}
+
+.help {
+  display: inline-block;
+  border: 1rpx silver solid;
+  border-radius: 30rpx;
+  padding: 10rpx 30rpx;
+}
+
+.del1 {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.title {
+  text-align: center;
+  font-size: 30rpx;
+  /* 只显示一行 */
+  width: 210rpx;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+}
+
+.position1 {
+  position: relative;
+}
+
+.position {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.imgsize {
+  height: 300rpx;
+  width: 210rpx;
+  margin: 20rpx;
+}
+
+.vantreplay {
+  vertical-align: middle;
+  margin-left: 30rpx;
+}

@@ -1,0 +1,11 @@
+<!--pages/Rankingdetails/Rankingdetails.wxml-->
+
+
+<view wx:for="{{Rankingdetails}}" wx:key="index" class="page" bindtap="todetails" data-item="{{item}}">
+<view><view><image class="imgsize" src='https://statics.zhuishushenqi.com{{item.cover}}'></image></view></view>
+<view>
+<view class="title">{{item.title}}</view>
+<view class="author">{{item.author}}</view>
+<view class="shortIntro">{{item.shortIntro}}</view>
+</view>
+</view>

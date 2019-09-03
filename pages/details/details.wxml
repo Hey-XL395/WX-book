@@ -1,0 +1,53 @@
+<!--pages/details/details.wxml-->
+<header></header>
+<view class="top">
+<view>
+
+<view><image class="img1"  src='https://statics.zhuishushenqi.com{{details.cover}}'></image></view>
+<view class="title">{{details.title}}</view>
+<view class="author">{{details.author}}</view>
+</view>
+</view>
+
+<footer>
+<view class="btn">
+<van-button type="primary" round="true" bindtap="read"><view class="text" >开始阅读</view></van-button>
+<van-button type="warning" round="true"  bindtap="addbook"><view class="text">{{bookshelf}}</view></van-button>
+</view>
+<view class="update">
+<view><van-rate  readonly value=" {{leftdetails.rating.score/2}} " bind:change="onChange" /></view>
+<text>更新至：</text><text class="update1">{{leftdetails.lastChapter}}</text>
+
+</view>
+<view class="tab">
+<van-tabs active="{{ active }}" bind:change="onChange">
+  <van-tab title="详情">
+  <view class="introduction">
+  <scroll-view scroll-y style="height:300rpx">
+  简介：{{leftdetails.longIntro}}
+  </scroll-view>
+  <view class="all" bindtap="toreadchapter"><van-icon name="gift-o" class="vanicon" />总目录（{{read.length}}章）</view>
+ <view class="replay"> 
+ <view>看过这本书的人还在看</view> 
+ <view  class="replay1" bindtap="replay"><van-icon name="replay"/>换一换</view> 
+ </view>
+<view class="replay2">
+  <view wx:for="{{books}}" wx:if="index" >
+    <view><image src='https://statics.zhuishushenqi.com{{item.cover}}'></image></view>
+  <view class="replaytitle">{{item.title}}</view>
+  </view>
+</view>
+  </view>
+
+  
+  </van-tab>
+  <van-tab title="评论（{{reviews.length}}）">
+  <view wx:for="{{reviews}}" wx:key="index" class="rem">
+  <view><image class="imgsize1" src='https://statics.zhuishushenqi.com{{item.author.avatar}}'></image></view>
+  <view class="deta"><text class="deta1">{{item.author.nickname}}</text><view>{{item.content}}</view></view>  
+  </view>
+  </van-tab>
+</van-tabs>
+</view>
+
+</footer>

@@ -1,0 +1,14 @@
+<!--components/classification/classification.wxml-->
+
+<view>
+  <view>
+    <van-row>
+      <van-col span="8" wx:for="{{book}}" wx:key="{{index}}" bindtap="minclassification" data-item="{{item}}" data-index="{{index}}">
+        <view class="book">
+          <view>{{item.name}}</view>
+          <view class="num">{{item.bookCount}}本</view>
+        </view>
+      </van-col>
+    </van-row>
+  </view>
+</view>

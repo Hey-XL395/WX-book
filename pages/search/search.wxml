@@ -1,0 +1,33 @@
+<!--pages/search/search.wxml-->
+<van-search value="{{ search }}" placeholder="请输入书名或作者名" bind:change="search" input-align="center"/>
+<view class="replay" wx:if="{{flag1}}">
+<!-- wx:if="{{searchbook.lenght === 1}}" -->
+  <view>大家都在搜</view>
+  <view class="replay1" bindtap="replay">
+    <van-icon name="replay" bindtap="replay"/>换一换</view>
+</view>
+<view class="everybodysearch">
+<view class="everybodysearch1" wx:for="{{color}}" wx:key="{{index}}" data-index="{{index}}" wx:if="{{flag1}}" style="background:{{item}}" bindtap="insearch" data-item="{{everybodysearch[index]}}">{{everybodysearch[index]}}</view>
+</view>
+<view class="replay" wx:if="{{flag1}}">
+  <view>搜索历史</view>
+  <view class="replay1" bindtap="del1">
+    <van-icon name="delete" />清空</view>
+</view>
+<view class="borhis" wx:if="{{flag1}}"> <view class="History" wx:for="{{History}}" wx:key="{{index}}" bindtap="insearch" data-item="{{item}}">{{item}}</view>
+</view>
+
+<!-- 搜索成功数据 -->
+<view wx:for="{{searchbook}}" wx:key="{{index}}" class="page" bindtap="todetails" data-item="{{item}}">
+  <view>
+    <view>
+      <image class="imgsize" src='https://statics.zhuishushenqi.com{{item.cover}}'></image>
+    </view>
+  </view>
+  <view>
+    <view class="title">{{item.title}}</view>
+    <view class="author">{{item.author}}</view>
+    <view class="shortIntro">{{item.shortIntro}}</view>
+    <view class="latelyFollower">最近收藏：{{item.latelyFollower}}</view>
+  </view>
+</view>

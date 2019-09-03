@@ -1,0 +1,12 @@
+{
+    "navigationBarTitleText": "书架",
+    
+  "usingComponents": {
+  "van-button": "/lib/vant/button/index",
+  "navHeader": "../../components/header/header",
+  "van-icon": "/lib/vant/icon/index",
+  "van-row": "/lib/vant/row/index",
+  "van-col": "/lib/vant/col/index"
+},
+  "enablePullDownRefresh":true
+}

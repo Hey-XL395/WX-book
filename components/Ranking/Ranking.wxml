@@ -1,0 +1,9 @@
+<!--components/Ranking/Ranking.wxml-->
+<view wx:for="{{ranking}}" wx:key="{{index}}">
+<view wx:if="{{item.collapse === false}}">
+<view class="rankingdis" bindtap="todetails" data-item="{{item}}">
+<view ><image class="imgsize" src='https://statics.zhuishushenqi.com{{item.cover}}'></image></view>
+<view class="hottext">{{item.title}}</view>
+</view>
+</view>
+</view>

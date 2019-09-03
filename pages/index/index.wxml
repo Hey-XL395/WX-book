@@ -1,0 +1,45 @@
+<!--index.wxml-->
+<view>
+  <!-- div变成view -->
+  <!-- span===text -->
+  <!-- img==image -->
+  <!-- <view class="container" wx:for="{{list}}" wx:key="{{index}}"> -->
+  <!-- 事件不能传参，必须自定义 -->
+  <!-- <view bindtap="toclass" data-item="{{item}}">
+      {{item.name}}
+    </view>
+  </view>
+  {{name}}
+  <van-button type="primary">11</van-button>
+  <navHeader name="{{name}}" bindsend="send"></navHeader> -->
+
+  <view class="group">
+    <view>
+      <view bindtap="del" wx:if="{{!flag}}">
+        <icon type="success" size="30" color="#FE0000" />
+      </view>
+      <view bindtap="del" wx:if="{{flag}}">
+        <icon type="success" size="30" color="#B2B2B2" />
+      </view>
+    </view>
+    <view>
+      <text class="help" bindtap="tohelp">帮助</text>
+      <van-icon name="replay" class="vantreplay" />
+    </view>
+  </view>
+</view>
+  <view wx:if="{{!flag1}}" class="none">书架是空的，快去添加吧！！</view>
+
+<view class="position">
+  <view wx:for="{{likebook}}" wx:key="{{index}}" bindtap="toread" data-item="{{item}}">
+    <view class="position1">
+      <image class="imgsize" src='https://statics.zhuishushenqi.com{{item.cover}}'></image>
+      <view class="title">{{item.title}}</view>
+      <view class="title">上次读到第{{item.history+1}}章</view>
+      <view catchtap="del1" data-item="{{item}}" data-index="{{index}}" class="del1" wx:if="{{!flag}}">
+        <!-- 点击删除 -->
+        <icon type="clear" size="30" color="#FE0000" class="del" />
+      </view>
+    </view>
+  </view>
+</view>

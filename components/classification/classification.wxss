@@ -1,0 +1,12 @@
+/* components/classification/classification.wxss */
+.book {
+  border-right: 1rpx rgba(88, 75, 105, 0.452) solid;
+  border-top: 1rpx rgba(88, 75, 105, 0.452) solid;
+  border-bottom: 1rpx rgba(88, 75, 105, 0.452) solid;
+  text-align: center;
+  padding: 10px 0 ;
+}
+.num {
+  text-align: center;
+  font-size:25rpx 
+}

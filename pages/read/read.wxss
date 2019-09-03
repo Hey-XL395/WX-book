@@ -1,0 +1,36 @@
+/* pages/read/read.wxss */
+
+.title1 {
+  margin: 20rpx;
+  text-align: center;
+  font-weight: bold;
+}
+.article {
+  line-height: 70rpx;
+text-indent:2em;
+margin: 30rpx
+}
+.up {
+  background: red;
+  color: white;
+  border-top-left-radius: 50rpx;
+  border-bottom-left-radius: 50rpx;
+  margin-right: 5rpx;
+  padding: 20rpx 40rpx;
+}
+
+.down {
+  background: red;
+  color: white;
+  border-top-right-radius: 50rpx;
+  border-bottom-right-radius: 50rpx;
+  margin-left: 5rpx;
+  padding: 20rpx 40rpx;
+}
+
+.btn {
+  display: flex;
+  /* 弹性盒子居中对齐 */
+  -webkit-justify-content: center;
+  justify-content: center;
+}

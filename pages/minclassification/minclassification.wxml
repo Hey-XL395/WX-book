@@ -1,0 +1,37 @@
+<!-- pages/minclassification/minclassification.wxml-->
+<!-- <view class="toplist">
+<view wx:for="{{toplist}}" wx:key="{{index}}" bindtap="clicktop" data-item="{{item}}">{{item.name}}</view>
+</view>
+<view class="minname">
+<view>全部</view>
+<view  wx:for="{{minname}}" wx:key="{{index}}" bindtap="clicktop" data-item="{{item}}">
+{{item}}
+</view>
+</view> -->
+
+<van-tabs active="{{ active }}" line-width="20rpx"  swipe-threshold="5"  bind:click="clicktop1" dtata-item="{{item}}" data-index="{{index}}">
+<view  wx:for="{{toplist}}" wx:key="{{index}}" >
+ <van-tab  title="{{item.name}}" >
+ </van-tab>
+</view>
+</van-tabs>
+ <van-tabs active="{{ active1 }}" line-width="20rpx"  swipe-threshold="4" bind:click="clicktop" data-index="{{index}}">
+ <view  wx:for="{{minname}}" wx:key="{{index}}">
+   <van-tab title="{{item}}">
+<view wx:for="{{tabnav}}" wx:key="index" class="page" bindtap="todetails" data-item="{{item}}">
+<view><view><image class="imgsize" src='https://statics.zhuishushenqi.com{{item.cover}}'></image></view></view>
+<view>
+<view class="title">{{item.title}}</view>
+<view class="author">{{item.author}}</view>
+<view class="shortIntro">{{item.shortIntro}}</view>
+<view class="tags1">
+<view  wx:for="{{color}}"  wx:key="index" wx:for-item="item1" wx:for-index="index1">
+<view class="tags2" style="background:{{item1}}">{{item.tags[index1]}}</view>
+</view>
+</view>
+</view>
+</view>
+<view wx:if="{{tabnav.length === 0 }}" class="none">这里一本书都没有</view>
+   </van-tab>
+ </view>
+</van-tabs>
